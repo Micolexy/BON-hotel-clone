@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BON Hotels</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <section id="header">
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-row md:flex-col justify-between items-center text-center mx-auto md:space-y-10"
+        >
+          <!-- logo -->
+          <img src="img/logo.png" alt="" />
+          <!-- menu -->
+          <div
+            class="hidden md:flex flex-row space-x-10 items-center text-softYellow"
+          >
+            <a
+              href="#welcome"
+              class="text-2xl hover:border-b-2 hover:border-b-softYellow"
+              >Our Hotel</a
+            >
+            <a
+              href="#room"
+              class="text-2xl hover:border-b-2 hover:border-b-softYellow"
+              >Rooms & Rates</a
+            >
+            <a
+              href="#"
+              class="text-2xl hover:border-b-2 hover:border-b-softYellow"
+              >Facilities</a
+            >
+            <a
+              href="#"
+              class="text-2xl hover:border-b-2 hover:border-b-softYellow"
+              >Contact Us</a
+            >
+            <img src="img/search icon.png" alt="" />
+          </div>
+          <!-- menu icon -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block menu md:hidden focus:outline-none"
+            >
+              <span class="menu-top"></span>
+              <span class="menu-middle"></span>
+              <span class="menu-bottom"></span>
+            </button>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div
+          id="menu"
+          class="hidden z-20 fixed md:hidden top-0 bottom-0 left-0 w-full h-60 py-1 pt-8 text-softYellow opacity-90 bg-black tracking-widest"
+        >
+          <div class="flex pl-5 flex-col space-y-2 divide-y divide-gray-300">
+            <a href="#welcome" class="text-2xl">Our Hotel</a>
+            <a href="#room" class="text-2xl">Rooms & Rates</a>
+            <a href="#" class="text-2xl">Facilities</a>
+            <a href="#" class="text-2xl">Contact Us</a>
+            <a href="#" class="text-2xl">News</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- check avability -->
+    <section id="check" class="opacity-90 bg-black mt-32 md:mt-10">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row px-12 py-3 text-veryDarkYellow">
+          <div
+            class="flex flex-col md:flex-row items-center mx-auto space-y-8 md:space-y-0 md:space-x-6"
+          >
+            <!-- city -->
+            <button
+              class="flex flex-row items-center space-x-4 rounded-lg bg-white px-5 py-3"
+            >
+              <h4 class="font-semibold text-md">Select a City...</h4>
+              <span><img src="img/Vector.png" class="w-4 h-4" alt="" /></span>
+            </button>
+            <!-- check in  -->
+            <button
+              class="flex flex-row items-center space-x-4 rounded-lg bg-white px-5 py-3"
+            >
+              <h4 class="font-semibold text-md">Check In..</h4>
+              <span
+                ><img src="img/date-icon.png" class="w-4 h-4" alt=""
+              /></span>
+            </button>
+            <!-- check out  -->
+            <button
+              class="flex flex-row items-center space-x-4 rounded-lg bg-white px-5 py-3"
+            >
+              <h4 class="font-semibold text-md">Check Out..</h4>
+              <span
+                ><img src="img/date-icon.png" class="w-4 h-4" alt=""
+              /></span>
+            </button>
+            <!-- avability -->
+            <button
+              class="flex flex-row items-center space-x-4 rounded-lg text-white bg-softYellow px-5 py-3"
+            >
+              <h4 class="font-semibold text-md">Check Availability</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="welcome" class="">
+      <div class="relative">
+        <img src="img/bg-hotel.png" alt="" />
+        <div
+          class="absolute flex flex-col items-center justify-center top-24 left-14 mx-auto md:mx-32 lg:mx-auto text-center text-white lg:top-72 lg:left-52"
+        >
+          <h2
+            class="text-3xl text-center font-semibold lg:text-7xl tracking-wider uppercase"
+          >
+            welcome to bon hotel
+          </h2>
+          <p class="tracking-widest capitalize font-light lg:mt-4">
+            Good people. good thinkig. good feeling.
+          </p>
+          <button
+            class="rounded-lg font text-white bg-softYellow py-4 mt-8 font-semibold w-52 md:w-96 hover:bg-white hover:text-softYellow hover:border-2 hover:border-softYellow hover:translate-y-3"
+          >
+            EXPLORE
+          </button>
+        </div>
+        <!-- Facilities -->
+        <div
+          class="lg:mx-auto mx-6 px-6 bg-white text-center text-softYellow relative max-w-4xl -top-10 md:-top-32 mt-8 md:mt-0 p-10 md:px-12 space-y-6 rounded-lg"
+        >
+          <h4 class="text-veryDarkYellow text-lg lg:text-4xl">Facilities</h4>
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10 text-veryDarkYellow px-10"
+          >
+            <!-- kitchen -->
+            <div class="flex flex-col space-y-4">
+              <img src="img/kitchen-icon.png" alt="" />
+              <a href="#" class="text-xl">Kitchen</a>
+            </div>
+            <!-- pool -->
+            <div class="flex flex-col space-y-4">
+              <img src="img/pool-icon.png" alt="" />
+              <a href="#" class="text-xl">Pool</a>
+            </div>
+            <!-- wifi -->
+            <div class="flex flex-col space-y-4">
+              <img src="img/wifi-icon.png" alt="" />
+              <a href="#" class="text-xl">Wifi</a>
+            </div>
+            <!-- gym -->
+            <div class="flex flex-col space-y-4">
+              <img src="img/gym-icon.png" alt="" />
+              <a href="#" class="text-xl">Gym</a>
+            </div>
+            <!-- taxi -->
+            <div class="flex flex-col space-y-4">
+              <img src="img/taxi-icon.png" alt="" />
+              <a href="#" class="text-xl">Taxi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- room and rate -->
+    <section id="room" class="mt-10 lg:mt-0">
+      <div class="container px-6 mx-auto text-center">
+        <h2
+          class="font-semibold tracking-wider mb-10 text-veryDarkYellow text-3xl lg:text-4xl"
+        >
+          Rooms & Rates
+        </h2>
+        <!-- rooms image container -->
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between mb-10 space-y-6 lg:space-y-0 lg:space-x-10"
+        >
+          <!-- room1 -->
+          <div class="relative">
+            <img src="img/bedroom-img.png" alt="" />
+            <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white">
+              <h3 class="font-semibold tracking-wider text-2xl lg:text-3xl">
+                Standard Twin Room
+              </h3>
+              <button class="button-container mb-8 mt-8">Check Rates</button>
+            </div>
+          </div>
+          <!-- room2 -->
+          <div class="relative">
+            <img src="img/bedroom-img.png" alt="" />
+            <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white">
+              <h3 class="font-semibold tracking-wider text-2xl lg:text-3xl">
+                Standard Room
+              </h3>
+              <button class="button-container mb-8 mt-8">Check Rates</button>
+            </div>
+          </div>
+        </div>
+        <!-- rooms2 image container -->
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between mb-10 space-y-6 lg:space-y-0 lg:space-x-10"
+        >
+          <!-- room 2-1 -->
+          <div class="relative">
+            <img src="img/bedroom-img-2.png" alt="" />
+            <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white">
+              <h3 class="font-semibold tracking-wider text-2xl lg:text-3xl">
+                Standard view Room
+              </h3>
+              <button class="button-container mb-8 mt-10">Check Rates</button>
+            </div>
+          </div>
+          <!-- room 2-2 -->
+          <div class="relative">
+            <img src="img/bedroom-img-2.png" alt="" />
+            <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white">
+              <h3 class="font-semibold tracking-wider text-2xl lg:text-3xl">
+                Deluxe Room
+              </h3>
+              <button class="button-container mb-8 mt-10">Check Rates</button>
+            </div>
+          </div>
+        </div>
+        <!-- end of room container -->
+        <div class="mt-10 mb-16">
+          <h2
+            class="text-3xl lg:text-4xl font-semibold font-sans tracking-wider text-veryDarkYellow"
+          >
+            Get a room already!
+          </h2>
+          <button class="button-container mt-6 mb-8">Book Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="px-6 bg-footerBlack pb-10">
+      <div class="container mx-auto">
+        <!-- footer container -->
+        <div
+          class="flex flex-col md:flex-row items-center text-center md:text-start justify-between p-6 space-y-6 md:space-y-0"
+        >
+          <!-- first footer menu container -->
+          <div class="flex flex-col space-y-10 text-white">
+            <img src="img/logo.footer.png" alt="" />
+            <div class="space-y-2">
+              <h4 class="font-semibold tracking-wider">
+                Bon hotels Head Office
+              </h4>
+              <p><a href="#">+234 000 456 7891</a></p>
+              <p><a href="#">info@hotels.com</a></p>
+            </div>
+          </div>
+          <!-- menu -->
+          <menu class="flex flex-col space-y-3 md:space-y-6 text-white">
+            <div class="tracking-wider">
+              <a href="#">Our Hotels</a>
+            </div>
+            <div class="tracking-wider">
+              <a href="#">Our Conferencing</a>
+            </div>
+            <div class="tracking-wider">
+              <a href="#">Our company</a>
+            </div>
+            <div class="tracking-wider">
+              <a href="#">Hotel Design</a>
+            </div>
+            <div class="tracking-wider">
+              <a href="#">Carrers</a>
+            </div>
+          </menu>
+          <!-- subscribe -->
+          <div class="flex flex-col space-y-2 text-white">
+            <h2 class="text-2xl tracking-wider font-semi-bold">
+              Subcribe For Offers
+            </h2>
+            <!-- contact form -->
+            <form
+              class="flex flex-col max-w-3xl "
+            >
+              <!-- buttom and email container -->
+              <div
+                class="flex flex-col space-y-3"
+              >
+                <!-- email input -->
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full text-gray-400 px-6 py-3 rounded-lg border-1 border-white focus:outline-none"
+                />
+                <!-- subscribe button -->
+                <a
+                  href="#"
+                  class="w-full py-3 font-semibold text-center rounded-lg bg-softYellow"
+                >
+                  Subscribe Now</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- copyright -->
+        <p class="text-white text-2xl text-center mx-auto mt-2">&copy Micolexy. 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
